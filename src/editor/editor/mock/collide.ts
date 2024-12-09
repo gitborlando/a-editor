@@ -30,6 +30,7 @@ export function mockCollide() {
     rect.height = 100
     schema[rect.id] = rect
     frame.childIds.push(rect.id)
+    rect.parentId = frame.id
   }
 
   return schema
